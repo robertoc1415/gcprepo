@@ -1,6 +1,6 @@
 FROM tiangolo/uvicorn-gunicorn-fastapi:python3.9
 # FROM tiangolo/uvicorn-gunicorn-fastapi
-COPY ./peca /app
+COPY ./pecaa /app
 WORKDIR /app
 # RUN python3 -m venv /env
 RUN python3 -m venv /env
