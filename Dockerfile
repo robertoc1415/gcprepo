@@ -34,4 +34,4 @@ RUN python3 -m pip install ta-lib
 # RUN sudo -H pip3 install pyodbc
 # RUN pip3 install --no-binary :all: pyodbc
 RUN pip3 install pyodbc
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8080"]
