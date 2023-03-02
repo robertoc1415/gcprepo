@@ -30,7 +30,7 @@ async def add_username(username: str):
     return {"username": username}
 
 
-@app.get("/usernames")
+@app.get("/usernames20")
 async def read_usernames():
     c.execute("SELECT * FROM users")
     usernames = [row[0] for row in c.fetchall()]
