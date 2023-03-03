@@ -15,7 +15,7 @@ c.execute('''CREATE TABLE IF NOT EXISTS users
              (username text)''')
 
 
-@app.post("/usernames10000")
+@app.post("/usernames11111")
 async def add_username(username: str):
     c.execute("SELECT * FROM users WHERE username=?", (username,))
     if c.fetchone():
@@ -30,7 +30,7 @@ async def add_username(username: str):
     return {"username": username}
 
 
-@app.get("/usernames20")
+@app.get("/usernames22222")
 async def read_usernames():
     c.execute("SELECT * FROM users")
     usernames = [row[0] for row in c.fetchall()]
