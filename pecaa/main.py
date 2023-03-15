@@ -32,11 +32,11 @@ async def add_username(username: str):
     return {"username": username}
 
 
-# @app.get("/usernames22222")
-# async def read_usernames():
-#     c.execute("SELECT * FROM users")
-#     usernames = [row[0] for row in c.fetchall()]
-#     return {"usernames": usernames}
+@app.get("/usernames22222")
+async def read_usernames():
+    c.execute("SELECT * FROM users")
+    usernames = [row[0] for row in c.fetchall()]
+    return {"usernames": usernames}
 
 # Cerrar conexión al finalizar
 
