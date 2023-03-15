@@ -1,8 +1,10 @@
+#importo librerias
 import sys
 # from sqlalchemy import create_engine
 from fastapi import FastAPI, HTTPException
 
 import sqlite3
+
 
 app = FastAPI()
 
