@@ -17,7 +17,7 @@ c.execute('''CREATE TABLE IF NOT EXISTS users
              (username text)''')
 
 
-@app.post("/usernames11111")
+@app.post("/usernames11111version")
 async def add_username(username: str):
     c.execute("SELECT * FROM users WHERE username=?", (username,))
     if c.fetchone():
